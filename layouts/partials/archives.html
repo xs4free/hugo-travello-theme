@@ -1,0 +1,10 @@
+<div class="p-3">
+    <h4 class="font-italic">Archives</h4>
+    <ol class="list-unstyled mb-0">
+
+    {{ range $value := .Site.Pages.GroupByDate "January 2006" }}
+        {{ $url := (index $value.Pages 0).Date.Format "2006/01" | urlize }}
+        <li><a href="/{{ $url }}">{{ .Key }}</a></li>
+    {{ end }}
+    </ol>
+</div>

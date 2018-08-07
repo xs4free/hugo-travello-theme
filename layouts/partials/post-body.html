@@ -1,0 +1,6 @@
+<div class="blog-post">
+    <h2 class="blog-post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <p class="blog-post-meta">Geplaatst op {{ .Date.Format "Monday 2 January 2006" }} door <a href="#">{{ .Params.Author }}</a></p>
+
+    {{ .Content }}
+</div><!-- /.blog-post -->

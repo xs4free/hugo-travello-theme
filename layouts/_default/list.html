@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-3 mb-4 font-italic border-bottom">
+                From the Firehose
+            </h3>
+
+            {{ $paginator := .Paginate (where .Pages "Type" "post").ByDate.Reverse }}
+            {{ range $paginator.Pages }}
+                {{- partial "post-body.html" . -}}
+            {{ end }}
+
+            <nav class="blog-pagination">
+                {{ if  $paginator.HasNext }}
+                <a class="btn btn-outline-primary" href="{{ $paginator.Next.URL }}">Oudere berichten</a>
+                {{ end }}
+                {{ if  $paginator.HasPrev }}
+                <a class="btn btn-outline-primary" href="{{ $paginator.Prev.URL }}">Nieuwere berichten</a>
+                {{ end }}
+            </nav>
+
+        </div><!-- /.blog-main -->
+
+        {{- partial "sidebar.html" . -}}
+
+    </div><!-- /.row -->
+
+</main><!-- /.container -->
+
+{{ end }}
