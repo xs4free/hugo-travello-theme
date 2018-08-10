@@ -1,9 +1,5 @@
 # theme.toml template for a Hugo theme
 # See https://github.com/gohugoio/hugoThemes#themetoml for an example
-# loosly based on:
-# - Activello theme by ColorLib.com [https://github.com/puikinsh/activello]
-# - blog theme from Bootstrap [https://getbootstrap.com/docs/4.1/examples/blog/]
-
 
 name = "Travello"
 license = "MIT"
@@ -20,6 +16,6 @@ min_version = "0.41"
 
 # If porting an existing theme
 [original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "blog theme from Bootstrap"
+  homepage = "https://getbootstrap.com/docs/4.1/examples/blog/"
+  repo = "https://github.com/twbs/bootstrap/tree/v4-dev/site/docs/4.1/examples/blog"
