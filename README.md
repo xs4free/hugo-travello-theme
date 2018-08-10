@@ -8,7 +8,7 @@ loosly based on:
 
 
 #TODO
-- [ ] Add post banner
+- [x] Add post banner
 - [ ] Add homepage content (instead of /posts)
 - [ ] Add image slider (flexslider)
 - [ ] Add RSS feed (also in widget)
