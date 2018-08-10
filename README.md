@@ -10,11 +10,11 @@ loosly based on:
 #TODO
 - [x] Add post banner
 - [X] Add homepage content (instead of /posts)
-- [ ] Disable featured posts
-- [ ] Replace big featured post with image slider (flexslider)
-- [ ] Disable categories on list-page
-- [ ] Hide subscribe link on list-page
+- [X] Disable featured posts
+- [X] Disable categories on list-page
+- [X] Hide subscribe link on list-page
 - [ ] Change blog title on list-page
+- [ ] Replace big featured post with image slider (flexslider)
 - [ ] Change fonts to match [Activello theme][2]
 - [ ] Add RSS feed (also in widget)
 - [ ] Add comments (extract from wordpress-export.xml)
@@ -29,6 +29,8 @@ loosly based on:
 - [ ] Add widget categories
 - [ ] Add widget subscribe to this blog
 - [ ] Add translations using i18n like [hugo-universal-theme][5]
+- [ ] Add privacy policy
+- [ ] Add cookie consent
 
 [1]: https://gohugo.io/content-management/related/
 [2]: https://github.com/puikinsh/activello
