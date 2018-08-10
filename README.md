@@ -9,7 +9,7 @@ loosly based on:
 
 #TODO
 - [x] Add post banner
-- [ ] Add homepage content (instead of /posts)
+- [X] Add homepage content (instead of /posts)
 - [ ] Disable featured posts
 - [ ] Replace big featured post with image slider (flexslider)
 - [ ] Disable categories on list-page
