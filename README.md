@@ -14,7 +14,7 @@ loosly based on:
 - [X] Disable categories on list-page
 - [X] Hide subscribe link on list-page
 - [X] Change blog title on list-page and add subtitle
-- [ ] Replace big featured post with image slider (flexslider)
+- [X] Replace big featured post with image slider (flexslider)
 - [ ] Change fonts to match [Activello theme][2]
 - [ ] Add RSS feed (also in widget)
 - [ ] Add comments (extract from wordpress-export.xml)
