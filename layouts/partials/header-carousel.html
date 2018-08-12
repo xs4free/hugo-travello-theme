@@ -1,7 +1,8 @@
+{{ $paginator := .Paginate (where .Pages "Type" "post").ByDate.Reverse }}
+{{ $itemsWithBanner := where $paginator.Pages ".Params.banner" "!=" nil }}
+{{ if (gt (len $itemsWithBanner) 0) }}
 <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-        {{ $paginator := .Paginate (where .Pages "Type" "post").ByDate.Reverse }}
-        {{ $itemsWithBanner := where $paginator.Pages ".Params.banner" "!=" nil }}
         {{ range $index, $item := $itemsWithBanner }}
             <div class="carousel-item {{ if eq $index 0 }} active {{ end }}">
                 <a href="{{ .Permalink }}">
@@ -29,3 +30,4 @@
         <span class="sr-only">Next</span>
     </a>
 </div>
+{{ end }} 
