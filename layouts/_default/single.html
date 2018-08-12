@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<main role="main" class="container">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            {{- partial "post-body.html" . -}}
+        </div><!-- /.blog-main -->
+
+        {{- partial "sidebar.html" . -}}
+
+    </div><!-- /.row -->
+
+</main><!-- /.container -->
+
+{{ end }}
