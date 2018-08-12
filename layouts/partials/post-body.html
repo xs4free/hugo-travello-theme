@@ -1,9 +1,11 @@
-<div class="blog-post">
-    <h2 class="blog-post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    <p class="blog-post-meta">Geplaatst op {{ .Date.Format "Monday 2 January 2006" }} door <a href="#">{{ .Params.Author }}</a></p>
+<article class="blog-post">
+    <header>
+        <h2 class="blog-post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p class="blog-post-meta">Geplaatst op {{ .Date.Format "Monday 2 January 2006" }} door <a href="#">{{ .Params.Author }}</a></p>
+    </header>
     {{ if .Params.banner }}
     <img src="{{ .Site.BaseURL}}{{ .Params.banner }}" class="img-fluid" alt="{{ .Params.bannertitle }}">
     {{ end }}
 
     {{ .Content }}
-</div><!-- /.blog-post -->
+</article><!-- /.blog-post -->

@@ -1,13 +1,24 @@
 /* stylelint-disable selector-list-comma-newline-after */
 
+body {
+  color: #696969;
+  font-family:  "Lora", "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 0.875rem;
+  line-height: 2;
+  word-wrap: break-word;
+}
+
+p {
+  margin: 0.9375rem 0rem;
+}
+
 .blog-header {
     line-height: 1;
     border-bottom: 1px solid #e5e5e5;
   }
   
   .blog-header-logo {
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-    font-size: 2.25rem;
+    font-size: 1.875rem;
   }
   
   .blog-header-logo:hover {
@@ -15,7 +26,12 @@
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  }
+
+  .tagline {
+    font-family:  "Montserrat", sans-serif, serif;
+    letter-spacing: 0.0625rem;
+    font-size: 0.875rem;
   }
   
   .display-4 {
@@ -101,9 +117,17 @@
   .blog-post {
     margin-bottom: 4rem;
   }
+  .blog-post header {
+    text-align: center;
+    font-size: 0.875rem;
+  }
   .blog-post-title {
-    margin-bottom: .25rem;
-    font-size: 2.5rem;
+    margin-bottom: .9375rem;
+    font-style: italic;
+    font-size: 1.5rem;
+  }
+  .blog-post-title a {
+    color: #444;
   }
   .blog-post-meta {
     margin-bottom: 1.25rem;
@@ -124,3 +148,8 @@
     margin-bottom: 0;
   }
   
+
+.carousel-caption h5 {
+  font-style: italic;
+  font-size: 1.75rem;
+}

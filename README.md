@@ -16,6 +16,7 @@ loosly based on:
 - [X] Change blog title on list-page and add subtitle
 - [X] Replace big featured post with image slider (flexslider)
 - [ ] Change fonts to match [Activello theme][2]
+- [ ] Display categories in list above blog-items (works as a nice seperator between items)
 - [ ] Add RSS feed (also in widget)
 - [ ] Add comments (extract from wordpress-export.xml)
 - [ ] Add widget newest comments
@@ -31,9 +32,11 @@ loosly based on:
 - [ ] Add translations using i18n like [hugo-universal-theme][5]
 - [ ] Add privacy policy
 - [ ] Add cookie consent
+- [ ] Add [roles][6] to html-elements
 
 [1]: https://gohugo.io/content-management/related/
 [2]: https://github.com/puikinsh/activello
 [3]: https://getbootstrap.com/docs/4.1/examples/blog/
 [4]: https://blog.atj.me/2017/10/generate-yearly-and-monthly-archive-pages-with-hugo-sections/
 [5]: https://github.com/devcows/hugo-universal-theme
+[6]: https://stackoverflow.com/questions/10403138/what-is-the-purpose-of-the-role-attribute-in-html
