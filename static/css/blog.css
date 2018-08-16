@@ -12,6 +12,15 @@ p {
   margin: 0.9375rem 0rem;
 }
 
+a {
+  color: #393939;
+  text-decoration: none;  
+}
+a:hover, a:focus {
+  color: #a161bf;
+  text-decoration: none;
+}
+
 .blog-header {
     line-height: 1;
     border-bottom: 1px solid #e5e5e5;
@@ -165,7 +174,7 @@ p {
   .blog-sidebar ol li {
     border-bottom: 1px solid #F2F2F2;
   }
-  
+
   /*
    * Footer
    */
