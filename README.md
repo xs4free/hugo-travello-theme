@@ -15,15 +15,15 @@ loosly based on:
 - [X] Hide subscribe link on list-page
 - [X] Change blog title on list-page and add subtitle
 - [X] Replace big featured post with image slider (flexslider)
+- [x] Display categories in list above blog-items (works as a nice seperator between items)
 - [ ] Change fonts to match [Activello theme][2]
-- [ ] Display categories in list above blog-items (works as a nice seperator between items)
 - [ ] Add RSS feed (also in widget)
 - [ ] Add comments (extract from wordpress-export.xml)
 - [ ] Add widget newest comments
 - [ ] Add post image gallery (extract from wordpress-export.xml)
 - [ ] Add widget newest posts
 - [ ] Add [archive pages][4]
-- [ ] Add search functionality
+- [ ] Add [(client side) search functionality][7]
 - [ ] Add [related content][1]
 - [ ] Add share on social media links
 - [ ] Display categories on single blog page
@@ -32,7 +32,9 @@ loosly based on:
 - [ ] Add translations using i18n like [hugo-universal-theme][5]
 - [ ] Add privacy policy
 - [ ] Add cookie consent
+- [ ] Add scroll-to-top button on bottom-right of every page
 - [ ] Add [roles][6] to html-elements
+- [ ] Add Gulp + Webpack using [Victor Hugo][8] (alsof checkout deployment to Netlify)
 
 [1]: https://gohugo.io/content-management/related/
 [2]: https://github.com/puikinsh/activello
@@ -40,3 +42,5 @@ loosly based on:
 [4]: https://blog.atj.me/2017/10/generate-yearly-and-monthly-archive-pages-with-hugo-sections/
 [5]: https://github.com/devcows/hugo-universal-theme
 [6]: https://stackoverflow.com/questions/10403138/what-is-the-purpose-of-the-role-attribute-in-html
+[7]: https://gist.github.com/eddiewebb/735feb48f50f0ddd65ae5606a1cb41ae#sample
+[8]: https://github.com/netlify/victor-hugo
