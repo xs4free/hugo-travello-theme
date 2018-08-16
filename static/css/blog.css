@@ -138,6 +138,7 @@ p {
   .blog-post-title {
     margin-bottom: .9375rem;
     font-style: italic;
+    font-family: "Lora", serif;
     font-size: 1.5rem;
   }
   .blog-post-title a {
