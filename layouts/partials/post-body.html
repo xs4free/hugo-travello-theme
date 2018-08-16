@@ -1,5 +1,13 @@
 <article class="blog-post">
     <header>
+        {{ with .Params.Categories }}
+        <ul class="blog-post-categories">
+            {{ range . }}
+            <li>{{ . | upper }}</li>
+            {{ end }}        
+        </ul>
+        <hr/>
+        {{ end }}
         <h2 class="blog-post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         <p class="blog-post-meta">Geplaatst op {{ .Date.Format "Monday 2 January 2006" }} door <a href="#">{{ .Params.Author }}</a></p>
     </header>
