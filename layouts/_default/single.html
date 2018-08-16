@@ -4,6 +4,15 @@
     <div class="row">
         <div class="col-md-8 blog-main">
             {{- partial "post-body.html" . -}}
+
+            <div class="blog-post-navigation">
+                <div class="float-left">
+                    {{ if .Next }} <a href="{{.Next.Permalink}}"><i class="fa fa-chevron-left"></i> {{.Next.Title | upper}}</a> {{ end }} 
+                </div>
+                <div class="float-right">
+                    {{ if .Prev }} <a href="{{.Prev.Permalink}}">{{.Prev.Title | upper}} <i class="fa fa-chevron-right"></i></a> {{ end }}    
+                </div>
+            </div>    
         </div><!-- /.blog-main -->
 
         {{- partial "sidebar.html" . -}}

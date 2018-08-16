@@ -148,7 +148,11 @@ p {
     margin-bottom: 1.25rem;
     color: #999;
   }
-  
+  .blog-post-navigation {
+    font-family:  "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.0625rem;
+  }
   /*
    * Sidebar widgets
    */
