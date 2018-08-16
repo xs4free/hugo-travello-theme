@@ -19,6 +19,7 @@ loosly based on:
 - [ ] Change fonts to match [Activello theme][2]
 - [ ] Add RSS feed (also in widget)
 - [ ] Add comments (extract from wordpress-export.xml)
+- [ ] Add comment-count below blogs on list-page 
 - [ ] Add widget newest comments
 - [ ] Add post image gallery (extract from wordpress-export.xml)
 - [ ] Add widget newest posts
