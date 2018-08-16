@@ -35,6 +35,8 @@ loosly based on:
 - [ ] Add cookie consent
 - [ ] Add scroll-to-top button on bottom-right of every page
 - [ ] Add [roles][6] to html-elements
+- [ ] Add Facebook OpenGraph tags to head
+- [ ] Add website ico and Apple ico to head
 - [ ] Add Gulp + Webpack using [Victor Hugo][8] (alsof checkout deployment to Netlify)
 
 [1]: https://gohugo.io/content-management/related/
