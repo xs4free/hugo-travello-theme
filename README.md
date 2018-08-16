@@ -17,7 +17,7 @@ loosly based on:
 - [X] Replace big featured post with image slider (flexslider)
 - [x] Display categories in list above blog-items (works as a nice seperator between items)
 - [X] Change fonts to match [Activello theme][2]
-- [ ] Add RSS feed (also in widget)
+- [X] Add RSS feed (also in widget)
 - [ ] Add comments (extract from wordpress-export.xml)
 - [ ] Add comment-count below blogs on list-page 
 - [ ] Add widget newest comments
