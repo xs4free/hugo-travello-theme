@@ -16,7 +16,7 @@ loosly based on:
 - [X] Change blog title on list-page and add subtitle
 - [X] Replace big featured post with image slider (flexslider)
 - [x] Display categories in list above blog-items (works as a nice seperator between items)
-- [ ] Change fonts to match [Activello theme][2]
+- [X] Change fonts to match [Activello theme][2]
 - [ ] Add RSS feed (also in widget)
 - [ ] Add comments (extract from wordpress-export.xml)
 - [ ] Add comment-count below blogs on list-page 
