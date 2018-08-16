@@ -28,6 +28,11 @@ p {
   h1, h2, h3, h4, h5, h6 {
   }
 
+  main {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5em;
+  }
+
   .tagline {
     font-family:  "Montserrat", sans-serif, serif;
     letter-spacing: 0.0625rem;
