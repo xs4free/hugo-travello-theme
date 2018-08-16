@@ -26,6 +26,7 @@ p {
   }
   
   h1, h2, h3, h4, h5, h6 {
+    font-family:  "Montserrat", sans-serif, serif;
   }
 
   main {
@@ -126,12 +127,6 @@ p {
     text-align: center;
     font-size: 0.875rem;
   }
-  .blog-post header hr {
-    border: 0;
-    border-top: 0.15rem solid #a161bf;
-    width: 2.5rem;
-    margin-top: 0.125rem;
-  }
   .blog-post-categories {
     font-size: 0.75rem;
     list-style: none;
@@ -154,6 +149,19 @@ p {
   }
   
   /*
+   * Sidebar widgets
+   */
+  .blog-sidebar h4 {
+    font-size: 0.875em;
+  }
+  .blog-sidebar .blog-seperator {
+    margin-left: 0;
+  }
+  .blog-sidebar ol li {
+    border-bottom: 1px solid #F2F2F2;
+  }
+  
+  /*
    * Footer
    */
   .blog-footer {
@@ -162,11 +170,19 @@ p {
     text-align: center;
     background-color: #f9f9f9;
     border-top: .05rem solid #e5e5e5;
+    font-family:  "Montserrat", sans-serif;
+    font-size: 0.75rem;
   }
   .blog-footer p:last-child {
     margin-bottom: 0;
   }
   
+.blog-seperator {
+  border: 0;
+  border-top: 0.15rem solid #a161bf;
+  width: 2.5rem;
+  margin-top: 0.125rem;
+}
 
 .carousel-caption h5 {
   font-style: italic;
