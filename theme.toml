@@ -7,7 +7,7 @@ licenselink = "https://github.com/xs4free/hugo-travello-theme/blob/master/LICENS
 description = ""
 homepage = "https://github.com/xs4free/hugo-travello-theme"
 tags = []
-features = []
+features = ["blog", "themes", "responsive", "disqus", "staticman"]
 min_version = "0.41"
 
 [author]

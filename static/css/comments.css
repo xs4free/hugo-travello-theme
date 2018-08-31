@@ -1,0 +1,48 @@
+.comments-area h3 {
+    font-size: 0.75rem;
+    padding: 0rem 0rem 3.125rem 0rem;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.comments-area ol {
+    list-style: none;
+    margin-left: 0px !important;
+    padding-left: 0;
+}
+
+.comments-area ol.children {
+    padding-left: 10px;
+}
+
+.comments-area img.avatar {
+    border-radius: 50%;
+    width: 80px;
+    margin: 0rem 0.625rem 0rem 0.625rem;
+}
+
+.comments-area .author {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.125rem;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.comments-area .author a {
+    margin-left: 1.25rem;
+    background: #f2f2f2;
+    color: #000000;
+    font-size: 0.625rem;
+    padding: 4px 10px;
+    display: inline-block;
+    font-weight: 100;
+    letter-spacing: 0rem;
+}
+
+.comments-area time {
+    color: #999;
+    font-style: italic;    
+}

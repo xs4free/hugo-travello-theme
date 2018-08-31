@@ -18,8 +18,10 @@ loosly based on:
 - [x] Display categories in list above blog-items (works as a nice seperator between items)
 - [X] Change fonts to match [Activello theme][2]
 - [X] Add RSS feed (also in widget)
-- [ ] Add comments (extract from wordpress-export.xml)
+- [X] Add comments (extract from wordpress-export.xml)
+- [ ] Fix time below comments (no seperator between minutes and seconds)
 - [ ] Add comment-count below blogs on list-page 
+- [ ] Add post new comment form
 - [ ] Add widget newest comments
 - [ ] Add post image gallery (extract from wordpress-export.xml)
 - [ ] Add widget newest posts
@@ -38,6 +40,8 @@ loosly based on:
 - [ ] Add Facebook OpenGraph tags to head
 - [ ] Add website ico and Apple ico to head
 - [ ] Add Gulp + Webpack using [Victor Hugo][8] (alsof checkout deployment to Netlify)
+- [ ] Add minimal config.toml settings to readme
+- [ ] Add Disqus comments
 
 [1]: https://gohugo.io/content-management/related/
 [2]: https://github.com/puikinsh/activello

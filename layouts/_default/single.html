@@ -5,6 +5,19 @@
         <div class="col-md-8 blog-main">
             {{- partial "post-body.html" . -}}
 
+            {{ if (.Params.comments) | or (and (or (not (isset .Params "comments")) (eq .Params.comments nil)) (.Site.Params.comments)) }}
+                <!-- {{ if .Site.DisqusShortname }}
+                <div class="disqus-comments">
+                    {{ template "_internal/disqus.html" . }}
+                </div>
+                {{ end }} -->
+                {{ if .Site.Params.staticman }}
+                <div class="staticman-comments">
+                    {{ partial "comments-post.html" . }}
+                </div>
+                {{ end }}
+            {{ end }}
+
             <div class="blog-post-navigation">
                 <div class="float-left">
                     {{ if .Next }} <a href="{{.Next.Permalink}}"><i class="fa fa-chevron-left"></i> {{.Next.Title | upper}}</a> {{ end }} 

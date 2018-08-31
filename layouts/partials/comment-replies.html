@@ -1,0 +1,21 @@
+<ol class="children">
+{{ range $index, $comments := (index $.SiteDataComments_parent $.entryId_parent ) }}
+  {{ if eq .replyTo $.parentId }}
+    <li>
+      <div class="d-flex flex-row">
+        <div>
+            <img class="avatar" src="https://secure.gravatar.com/avatar/{{ .email }}?s=100&d=mm&r=g">
+        </div>
+        <div>
+          <div class="author">
+            {{ .name }} antwoord op {{ $.parentName }}
+            <a id="{{ .id }}" href="#comment-form" onclick="changeValue('fields[replyTo]', '{{ .id }}')" aria-label="Antwoord op {{ .name }}">beantwoorden</a>
+          </div>
+          <small><time>{{ dateFormat "Monday 2 Jan 2006 om 15:45" .date }}</time></small>
+          <p>{{ .body | markdownify }}</p>
+        </div>
+      </div>
+    </li>
+  {{ end }}
+{{ end }}
+</ol>

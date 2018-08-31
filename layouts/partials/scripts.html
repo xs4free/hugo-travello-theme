@@ -9,3 +9,11 @@
     text: 'Thumbnail'
     });
 </script>
+
+{{- if .Site.Params.staticman.staticman -}}
+<script src="{{ "js/staticman.js" | absURL }}"></script>
+{{- end -}}
+
+{{- if .Site.Params.staticman.recaptcha -}}
+<script src='https://www.google.com/recaptcha/api.js'></script>
+{{- end -}}
