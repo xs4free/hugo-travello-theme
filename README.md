@@ -23,6 +23,7 @@ loosly based on:
 - [ ] Add comment-count below blogs on list-page 
 - [ ] Add post new comment form
 - [ ] Add widget newest comments
+- [ ] Replace [img-alt with figcaption-tag][9]
 - [ ] Add post image gallery (extract from wordpress-export.xml)
 - [ ] Add widget newest posts
 - [ ] Add [archive pages][4]
@@ -51,3 +52,4 @@ loosly based on:
 [6]: https://stackoverflow.com/questions/10403138/what-is-the-purpose-of-the-role-attribute-in-html
 [7]: https://gist.github.com/eddiewebb/735feb48f50f0ddd65ae5606a1cb41ae#sample
 [8]: https://github.com/netlify/victor-hugo
+[9]: https://www.junian.net/hugo-image-figure-wrap/
