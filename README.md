@@ -19,6 +19,7 @@ loosly based on:
 - [X] Change fonts to match [Activello theme][2]
 - [X] Add RSS feed (also in widget)
 - [X] Add comments (extract from wordpress-export.xml)
+- [ ] Update 404.html page [10]
 - [ ] Fix time below comments (no seperator between minutes and seconds)
 - [ ] Add comment-count below blogs on list-page 
 - [ ] Add post new comment form
@@ -53,3 +54,4 @@ loosly based on:
 [7]: https://gist.github.com/eddiewebb/735feb48f50f0ddd65ae5606a1cb41ae#sample
 [8]: https://github.com/netlify/victor-hugo
 [9]: https://www.junian.net/hugo-image-figure-wrap/
+[10]: https://gohugo.io/templates/404/
