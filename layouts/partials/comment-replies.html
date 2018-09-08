@@ -9,7 +9,7 @@
         <div>
           <div class="author">
             {{ .name }} antwoord op {{ $.parentName }}
-            <a id="{{ .id }}" href="#comment-form" onclick="changeValue('fields[replyTo]', '{{ .id }}')" aria-label="Antwoord op {{ .name }}">beantwoorden</a>
+            <!-- <a id="{{ .id }}" href="#comment-form" onclick="changeValue('fields[replyTo]', '{{ .id }}')" aria-label="Antwoord op {{ .name }}">beantwoorden</a> -->
           </div>
           <small><time>{{ dateFormat "Monday 2 Jan 2006 om 15:45" .date }}</time></small>
           <p>{{ .body | markdownify }}</p>

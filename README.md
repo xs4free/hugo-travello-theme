@@ -23,14 +23,16 @@ loosly based on:
 - [ ] Fix time below comments (no seperator between minutes and seconds)
 - [ ] Add comment-count below blogs on list-page 
 - [ ] Add post new comment form
+- [ ] Enable reply to comment button besides comments
 - [ ] Add widget newest comments
 - [ ] Replace [img-alt with figcaption-tag][9]
 - [ ] Add post image gallery (extract from wordpress-export.xml)
 - [ ] Add widget newest posts
-- [ ] Add [archive pages][4]
+- [ ] Add [archive pages][4] and update Archive-widget
 - [ ] Add [(client side) search functionality][7]
 - [ ] Add [related content][1]
 - [ ] Add share on social media links
+- [ ] Update links in Social Media widget
 - [ ] Display categories on single blog page
 - [ ] Add widget categories
 - [ ] Add widget subscribe to this blog
