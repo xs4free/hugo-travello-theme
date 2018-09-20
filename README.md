@@ -23,7 +23,7 @@ loosly based on:
 - [ ] Add favicon.ico to prevent 404 error in Chrome
 - [ ] Hide posts with 'draft: true'
 - [ ] Update 404.html page [10]
-- [ ] Fix time below comments (no seperator between minutes and seconds)
+- [X] [Fix time below comments (no seperator between minutes and seconds)][11]
 - [ ] Add comment-count below blogs on list-page 
 - [ ] Add post new comment form
 - [ ] Enable reply to comment button besides comments
@@ -60,3 +60,4 @@ loosly based on:
 [8]: https://github.com/netlify/victor-hugo
 [9]: https://www.junian.net/hugo-image-figure-wrap/
 [10]: https://gohugo.io/templates/404/
+[11]: https://gohugohq.com/howto/hugo-dateformat/

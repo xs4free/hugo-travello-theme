@@ -24,7 +24,7 @@
               {{ .name }}
               <!-- <a id="{{ .id }}" href="#comment-form" onclick="changeValue('fields[replyTo]', '{{ .id }}')" aria-label="Antwoord op {{ .name }}">beantwoorden</a> -->
             </div>
-            <small><time>{{ dateFormat "Monday 2 Jan 2006 om 15:45" .date }}</time></small>
+            <small><time>{{ dateFormat "Monday 2 Jan 2006 om 15:04:05" .date }}</time></small>
             <p>{{ .body | markdownify }}</p>
             <hr class="blog-seperator"/>
           </div>
