@@ -19,7 +19,8 @@ loosly based on:
 - [X] Change fonts to match [Activello theme][2]
 - [X] Add RSS feed (also in widget)
 - [X] Add comments (extract from wordpress-export.xml)
-- [ ] Fix Javascript error on Index-page in Staticman.js on line 9: Uncaught TypeError: Cannot set property 'disabled' of null
+- [X] Fix Javascript error on Index-page in Staticman.js on line 9: Uncaught TypeError: Cannot set property 'disabled' of null
+- [ ] Add favicon.ico to prevent 404 error in Chrome
 - [ ] Hide posts with 'draft: true'
 - [ ] Update 404.html page [10]
 - [ ] Fix time below comments (no seperator between minutes and seconds)

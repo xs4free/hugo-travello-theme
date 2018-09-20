@@ -6,4 +6,7 @@ function enableBtn(){
     document.getElementById("submit_button").disabled = false;
 };
 
-document.getElementById("submit_button").disabled = true;
+var btn = document.getElementById("submit_button");
+if (btn) {
+    btn.disabled = true;
+}
