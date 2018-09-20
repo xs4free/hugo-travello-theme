@@ -20,6 +20,7 @@ loosly based on:
 - [X] Add RSS feed (also in widget)
 - [X] Add comments (extract from wordpress-export.xml)
 - [ ] Fix Javascript error on Index-page in Staticman.js on line 9: Uncaught TypeError: Cannot set property 'disabled' of null
+- [ ] Hide posts with 'draft: true'
 - [ ] Update 404.html page [10]
 - [ ] Fix time below comments (no seperator between minutes and seconds)
 - [ ] Add comment-count below blogs on list-page 
