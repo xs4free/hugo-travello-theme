@@ -10,7 +10,7 @@ Special thanks to the following websites:
 
 #TODO
 - [ ] Hide posts with 'draft: true'
-- [ ] Update 404.html page [10]
+- [ ] Update [404.html page][10]
 - [ ] Add comment-count below blogs on list-page 
 - [ ] Add post new comment form
 - [ ] Enable reply to comment button besides comments
