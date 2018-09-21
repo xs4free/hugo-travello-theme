@@ -5,25 +5,12 @@ loosly based on:
 - [Activello theme][2] by ColorLib.com
 - [blog theme][3] from Bootstrap
 
-
+Special thanks to the following websites:
+- [Realfavicongenerator.net][12] for generating favico's and head-html.
 
 #TODO
-- [x] Add post banner
-- [X] Add homepage content (instead of /posts)
-- [X] Disable featured posts
-- [X] Disable categories on list-page
-- [X] Hide subscribe link on list-page
-- [X] Change blog title on list-page and add subtitle
-- [X] Replace big featured post with image slider (flexslider)
-- [x] Display categories in list above blog-items (works as a nice seperator between items)
-- [X] Change fonts to match [Activello theme][2]
-- [X] Add RSS feed (also in widget)
-- [X] Add comments (extract from wordpress-export.xml)
-- [X] Fix Javascript error on Index-page in Staticman.js on line 9: Uncaught TypeError: Cannot set property 'disabled' of null
-- [ ] Add favicon.ico to prevent 404 error in Chrome
 - [ ] Hide posts with 'draft: true'
 - [ ] Update 404.html page [10]
-- [X] [Fix time below comments (no seperator between minutes and seconds)][11]
 - [ ] Add comment-count below blogs on list-page 
 - [ ] Add post new comment form
 - [ ] Enable reply to comment button besides comments
@@ -45,10 +32,24 @@ loosly based on:
 - [ ] Add scroll-to-top button on bottom-right of every page
 - [ ] Add [roles][6] to html-elements
 - [ ] Add Facebook OpenGraph tags to head
-- [ ] Add website ico and Apple ico to head
 - [ ] Add Gulp + Webpack using [Victor Hugo][8] (alsof checkout deployment to Netlify)
 - [ ] Add minimal config.toml settings to readme
 - [ ] Add Disqus comments
+- [x] ~~Add post banner~~
+- [X] ~~Add homepage content (instead of /posts)~~
+- [X] ~~Disable featured posts~~
+- [X] ~~Disable categories on list-page~~
+- [X] ~~Hide subscribe link on list-page~~
+- [X] ~~Change blog title on list-page and add subtitle~~
+- [X] ~~Replace big featured post with image slider (flexslider)~~
+- [x] ~~Display categories in list above blog-items (works as a nice seperator between items)~~
+- [X] ~~Change fonts to match [Activello theme][2]~~
+- [X] ~~Add RSS feed (also in widget)~~
+- [X] ~~Add comments (extract from wordpress-export.xml)~~
+- [X] ~~Fix Javascript error on Index-page in Staticman.js on line 9: Uncaught TypeError: Cannot set property 'disabled' of null~~
+- [X] ~~[Fix time below comments (no seperator between minutes and seconds)][11]~~
+- [X] ~~Add favicon.ico to prevent 404 error in Chrome~~
+- [X] ~~Add website ico and Apple ico to head~~
 
 [1]: https://gohugo.io/content-management/related/
 [2]: https://github.com/puikinsh/activello
@@ -61,3 +62,4 @@ loosly based on:
 [9]: https://www.junian.net/hugo-image-figure-wrap/
 [10]: https://gohugo.io/templates/404/
 [11]: https://gohugohq.com/howto/hugo-dateformat/
+[12]: https://realfavicongenerator.net
