@@ -6,7 +6,7 @@
         {{ range $index, $item := $itemsWithBanner }}
             <div class="carousel-item {{ if eq $index 0 }} active {{ end }}">
                 <a href="{{ .Permalink }}">
-                    <div style="background: url({{ .Site.BaseURL}}{{ .Params.banner }}) no-repeat center; background-size: cover; height:400px">
+                    <div style="background: url({{ .Params.banner | absURL }}) no-repeat center; background-size: cover; height:400px">
                         <div class="carousel-caption d-md-block">
                             <h5>{{ .Title }}</h5>
                         </div>
