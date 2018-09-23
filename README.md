@@ -7,8 +7,12 @@ loosly based on:
 
 Special thanks to the following websites:
 - [Realfavicongenerator.net][12] for generating favico's and head-html.
+- [Hugo Easy Gallery][13] by Li-Wen Yip
+- [Hugo Page Resources][14] by Regis Philibert
 
 #TODO
+- [ ] Move banner property in frontend-matter to resources
+- [ ] Resize banner using [Hugo image processing][15]
 - [ ] Hide posts with 'draft: true'
 - [ ] Update [404.html page][10]
 - [ ] Add comment-count below blogs on list-page 
@@ -16,7 +20,6 @@ Special thanks to the following websites:
 - [ ] Enable reply to comment button besides comments
 - [ ] Add widget newest comments
 - [ ] Replace [img-alt with figcaption-tag][9]
-- [ ] Add post image gallery (extract from wordpress-export.xml)
 - [ ] Add widget newest posts
 - [ ] Add [archive pages][4] and update Archive-widget
 - [ ] Add [(client side) search functionality][7]
@@ -32,8 +35,10 @@ Special thanks to the following websites:
 - [ ] Add scroll-to-top button on bottom-right of every page
 - [ ] Add [roles][6] to html-elements
 - [ ] Add Facebook OpenGraph tags to head
+- [ ] Remove https://www.google.com/recaptcha/api.js from List.html scriptblock (only needed for single.html) 
 - [ ] Add Gulp + Webpack using [Victor Hugo][8] (alsof checkout deployment to Netlify)
 - [ ] Add minimal config.toml settings to readme
+- [ ] Implement [Facebook rectangular gallery style][16] image gallery
 - [ ] Add Disqus comments
 - [x] ~~Add post banner~~
 - [X] ~~Add homepage content (instead of /posts)~~
@@ -50,6 +55,7 @@ Special thanks to the following websites:
 - [X] ~~[Fix time below comments (no seperator between minutes and seconds)][11]~~
 - [X] ~~Add favicon.ico to prevent 404 error in Chrome~~
 - [X] ~~Add website ico and Apple ico to head~~
+- [X] ~~Add post image gallery (extract from wordpress-export.xml) using [Hugo Easy Gallery][13]~~
 
 [1]: https://gohugo.io/content-management/related/
 [2]: https://github.com/puikinsh/activello
@@ -63,3 +69,7 @@ Special thanks to the following websites:
 [10]: https://gohugo.io/templates/404/
 [11]: https://gohugohq.com/howto/hugo-dateformat/
 [12]: https://realfavicongenerator.net
+[13]: https://github.com/liwenyip/hugo-easy-gallery/
+[14]: https://regisphilibert.com/blog/2018/01/hugo-page-resources-and-how-to-use-them/
+[15]: https://gohugo.io/content-management/image-processing/
+[16]: https://en.support.wordpress.com/gallery/#examples-of-gallery-styles
