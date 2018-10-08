@@ -1,18 +1,35 @@
+{{ $pagesWithBannerScratch := newScratch }}
+{{ $pagesWithBannerScratch.Set "pages" slice }}
+
 {{ $paginator := .Paginate (where .Pages "Type" "post").ByDate.Reverse }}
-{{ $itemsWithBanner := where $paginator.Pages ".Params.banner" "!=" nil }}
+{{ range $paginator.Pages }}
+    {{ $page := . }}
+    {{ with .Resources.ByType "image" }}
+        {{ range first 1 (where . ".Params.banner" "eq" true) }}
+            {{ $pagesWithBannerScratch.Add "pages" (slice $page) }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+{{ $itemsWithBanner := ($pagesWithBannerScratch.Get "pages") }}
 {{ if (gt (len $itemsWithBanner) 0) }}
 <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         {{ range $index, $item := $itemsWithBanner }}
-            <div class="carousel-item {{ if eq $index 0 }} active {{ end }}">
-                <a href="{{ .Permalink }}">
-                    <div style="background: url({{ .Params.banner | absURL }}) no-repeat center; background-size: cover; height:400px">
-                        <div class="carousel-caption d-md-block">
-                            <h5>{{ .Title }}</h5>
-                        </div>
+            {{ with .Resources.ByType "image" }}
+                {{ range first 1 (where . ".Params.banner" "eq" true) }}
+                    {{ $bannerImage := .Fit "1000x1000" }}
+                    <div class="carousel-item {{ if eq $index 0 }} active {{ end }}">
+                        <a href="{{ $item.Permalink }}">
+                            <div style="background: url({{ $bannerImage.RelPermalink }}) no-repeat center; background-size: cover; height:400px">
+                                <div class="carousel-caption d-md-block">
+                                    <h5>{{ $item.Title }}</h5>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </a>
-            </div>
+                {{ end }}
+            {{ end }}
         {{ end }}
             
         <ol class="carousel-indicators">

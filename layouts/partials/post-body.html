@@ -11,8 +11,14 @@
         <h2 class="blog-post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         <p class="blog-post-meta">Geplaatst op {{ .Date.Format "Monday 2 January 2006" }} door <a href="#">{{ .Params.Author }}</a></p>
     </header>
-    {{ if .Params.banner }}
-    <img src="{{ .Params.banner | absURL }}" class="img-fluid" alt="{{ .Params.bannertitle }}">
+
+    {{ with .Resources.ByType "image" }}
+        {{ range first 1 (where . "Params.banner" "eq" true) }}
+            {{ $bannerImage := .Fit "1000x1000" }}
+            <figure class="no-photoswipe">
+                <img src="{{ $bannerImage.RelPermalink }}" class="img-fluid" alt="{{ $bannerImage.Title }}">
+            </figure>
+        {{ end }}
     {{ end }}
 
     {{ .Content }}

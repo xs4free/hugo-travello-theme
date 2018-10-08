@@ -5,14 +5,14 @@ loosly based on:
 - [Activello theme][2] by ColorLib.com
 - [blog theme][3] from Bootstrap
 
-Special thanks to the following websites:
+Special thanks to the following websites/blogposts:
 - [Realfavicongenerator.net][12] for generating favico's and head-html.
 - [Hugo Easy Gallery][13] by Li-Wen Yip
 - [Hugo Page Resources][14] by Regis Philibert
 
 #TODO
-- [ ] Move banner property in frontend-matter to resources
-- [ ] Resize banner using [Hugo image processing][15]
+- [ ] Fix hiding gallery titles when multiple rows and last row contains less than 3 images
+- [ ] Fix clicking on image in gallery on page/2 and onwards (only works on home-page now)
 - [ ] Hide posts with 'draft: true'
 - [ ] Update [404.html page][10]
 - [ ] Add comment-count below blogs on list-page 
@@ -56,6 +56,8 @@ Special thanks to the following websites:
 - [X] ~~Add favicon.ico to prevent 404 error in Chrome~~
 - [X] ~~Add website ico and Apple ico to head~~
 - [X] ~~Add post image gallery (extract from wordpress-export.xml) using [Hugo Easy Gallery][13]~~
+- [x] ~~Move banner property in frontend-matter to resources~~
+- [x] ~~Resize banner using [Hugo image processing][15]~~
 
 [1]: https://gohugo.io/content-management/related/
 [2]: https://github.com/puikinsh/activello
