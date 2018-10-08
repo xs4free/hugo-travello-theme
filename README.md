@@ -11,7 +11,6 @@ Special thanks to the following websites/blogposts:
 - [Hugo Page Resources][14] by Regis Philibert
 
 #TODO
-- [ ] Fix hiding gallery titles when multiple rows and last row contains less than 3 images
 - [ ] Fix clicking on image in gallery on page/2 and onwards (only works on home-page now)
 - [ ] Hide posts with 'draft: true'
 - [ ] Update [404.html page][10]
@@ -58,6 +57,7 @@ Special thanks to the following websites/blogposts:
 - [X] ~~Add post image gallery (extract from wordpress-export.xml) using [Hugo Easy Gallery][13]~~
 - [x] ~~Move banner property in frontend-matter to resources~~
 - [x] ~~Resize banner using [Hugo image processing][15]~~
+- [x] ~~Fix hiding gallery titles when multiple rows and last row contains less than 3 images~~
 
 [1]: https://gohugo.io/content-management/related/
 [2]: https://github.com/puikinsh/activello
