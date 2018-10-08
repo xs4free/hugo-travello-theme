@@ -1,0 +1,6 @@
+{{ $img := .Page.Resources.GetMatch (printf "*%s" (.Get 0)) }}
+{{ $resizedImg := $img.Fit "750x750" }}
+<figure class="no-photoswipe">
+    <img src="{{ $resizedImg.RelPermalink }}" alt="{{ $img.Title }}" class="img-fluid" />
+	<!-- <figcaption>{{ $img.Title }}</figcaption> -->
+</figure>
