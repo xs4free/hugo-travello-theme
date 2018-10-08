@@ -1,10 +1,10 @@
 <div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
 
     {{ with .Resources.ByType "image" }}
-        {{ range . }}
+        {{ range where . ".Params.imagegallery" "eq" true }}
 
-            {{ $thumbImage := .Fit "200x200" }}
-            {{ $fullImage := .Fit "1500x1500" }}
+            {{ $thumbImage := .Fit "300x300" }}
+            {{ $fullImage := .Fit "1000x1000" }}
 
             <div class="box fancy-figure caption-position-bottom caption-effect-slide" style="max-width:756px">
               <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
@@ -14,7 +14,7 @@
                 <figcaption>
                     <p>{{ .Title }}</p>
                 </figcaption>
-                <a href="{{ .RelPermalink }}" itemprop="contentUrl" data-size="{{$fullImage.Width}}x{{$fullImage.Height}}"></a><!-- put <a> last so it is stacked on top -->
+                <a href="{{ $fullImage.RelPermalink }}" itemprop="contentUrl" data-size="{{$fullImage.Width}}x{{$fullImage.Height}}"></a><!-- put <a> last so it is stacked on top -->
               </figure>
             </div>           
 
