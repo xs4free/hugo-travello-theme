@@ -11,7 +11,7 @@ Special thanks to the following websites/blogposts:
 - [Hugo Page Resources][14] by Regis Philibert
 
 #TODO
-- [ ] Fix clicking on image in gallery on page/2 and onwards (only works on home-page now)
+- [ ] Fix comments when using Hugo Page Resource (no comments are visible)
 - [ ] Hide posts with 'draft: true'
 - [ ] Update [404.html page][10]
 - [ ] Add comment-count below blogs on list-page 
@@ -37,6 +37,7 @@ Special thanks to the following websites/blogposts:
 - [ ] Remove https://www.google.com/recaptcha/api.js from List.html scriptblock (only needed for single.html) 
 - [ ] Add Gulp + Webpack using [Victor Hugo][8] (alsof checkout deployment to Netlify)
 - [ ] Add minimal config.toml settings to readme
+- [ ] When multiple posts on the home-page contain a gallery, only shown images from one post in PhotoSwipe after clicking on a image
 - [ ] Implement [Facebook rectangular gallery style][16] image gallery
 - [ ] Add Disqus comments
 - [x] ~~Add post banner~~
@@ -58,6 +59,7 @@ Special thanks to the following websites/blogposts:
 - [x] ~~Move banner property in frontend-matter to resources~~
 - [x] ~~Resize banner using [Hugo image processing][15]~~
 - [x] ~~Fix hiding gallery titles when multiple rows and last row contains less than 3 images~~
+- [x] ~~Fix clicking on image in gallery on page/2 and onwards (only works on home-page now)~~
 
 [1]: https://gohugo.io/content-management/related/
 [2]: https://github.com/puikinsh/activello
