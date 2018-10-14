@@ -18,7 +18,7 @@
         {{ range $index, $item := $itemsWithBanner }}
             {{ with .Resources.ByType "image" }}
                 {{ range first 1 (where . ".Params.banner" "eq" true) }}
-                    {{ $bannerImage := .Fit "1000x1000" }}
+                    {{ $bannerImage := .Fit "1500x1000" }}
                     <div class="carousel-item {{ if eq $index 0 }} active {{ end }}">
                         <a href="{{ $item.Permalink }}">
                             <div style="background: url({{ $bannerImage.RelPermalink }}) no-repeat center; background-size: cover; height:400px">
