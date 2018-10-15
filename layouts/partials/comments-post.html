@@ -1,7 +1,12 @@
 <section class="comments-area">
   {{ $.Scratch.Add "commentCount" 0 }}
-  {{ $entryId := .File.BaseFileName }}
+  {{ $.Scratch.Add "commentFolder" (string .File.BaseFileName) }}
 
+  {{ with .Page.Params.commentFolder }}
+    {{ $.Scratch.Set "commentFolder" . }}
+  {{ end }}
+
+  {{ $entryId := $.Scratch.Get "commentFolder" }}
   {{ range $index, $comments := (index $.Site.Data.comments $entryId ) }}
     {{ $.Scratch.Add "commentCount" 1 }}
   {{ end }}       

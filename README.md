@@ -11,7 +11,6 @@ Special thanks to the following websites/blogposts:
 - [Hugo Page Resources][14] by Regis Philibert
 
 #TODO
-- [ ] Fix comments when using Hugo Page Resource (no comments are visible)
 - [ ] Hide posts with 'draft: true'
 - [ ] Update [404.html page][10]
 - [ ] Add comment-count below blogs on list-page 
@@ -60,6 +59,7 @@ Special thanks to the following websites/blogposts:
 - [x] ~~Resize banner using [Hugo image processing][15]~~
 - [x] ~~Fix hiding gallery titles when multiple rows and last row contains less than 3 images~~
 - [x] ~~Fix clicking on image in gallery on page/2 and onwards (only works on home-page now)~~
+- [x] ~~Fix comments when using Hugo Page Resource (no comments are visible)~~
 
 [1]: https://gohugo.io/content-management/related/
 [2]: https://github.com/puikinsh/activello
