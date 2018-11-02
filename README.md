@@ -9,10 +9,9 @@ Special thanks to the following websites/blogposts:
 - [Realfavicongenerator.net][12] for generating favico's and head-html.
 - [Hugo Easy Gallery][13] by Li-Wen Yip
 - [Hugo Page Resources][14] by Regis Philibert
+- [How to create a full-page hero image (HTML & CSS)][17] by Ethan
 
 #TODO
-- [ ] Hide posts with 'draft: true'
-- [ ] Update [404.html page][10]
 - [ ] Add comment-count below blogs on list-page 
 - [ ] Add post new comment form
 - [ ] Enable reply to comment button besides comments
@@ -60,6 +59,8 @@ Special thanks to the following websites/blogposts:
 - [x] ~~Fix hiding gallery titles when multiple rows and last row contains less than 3 images~~
 - [x] ~~Fix clicking on image in gallery on page/2 and onwards (only works on home-page now)~~
 - [x] ~~Fix comments when using Hugo Page Resource (no comments are visible)~~
+- [x] ~~Hide posts with 'draft: true'~~
+- [x] ~~Update [404.html page][10]~~
 
 [1]: https://gohugo.io/content-management/related/
 [2]: https://github.com/puikinsh/activello
@@ -77,3 +78,4 @@ Special thanks to the following websites/blogposts:
 [14]: https://regisphilibert.com/blog/2018/01/hugo-page-resources-and-how-to-use-them/
 [15]: https://gohugo.io/content-management/image-processing/
 [16]: https://en.support.wordpress.com/gallery/#examples-of-gallery-styles
+[17]: https://codetheweb.blog/2017/12/07/fullscreen-image-hero/

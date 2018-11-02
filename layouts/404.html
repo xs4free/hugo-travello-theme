@@ -1,7 +1,10 @@
 {{ define "main"}}
     <main id="main">
-      <div>
-       <h1 id="title"><a href="{{ "/" | relURL }}">Go Home</a></h1>
-      </div>
+      <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('{{ "/img/404.jpg" | relURL }}');">
+          <div class="hero-inner">
+              <h1>Pagina niet gevonden</h1>
+              <a href="{{ "/" | relURL }}" class="btn">Terug naar de hoofdpagina...</a>
+          </div>
+      </section>
     </main>
 {{ end }}
