@@ -24,4 +24,32 @@
     {{ .Content }}
 
     {{- partial "gallery/hugo-easy-gallery.html" . -}}
+
+  
+    {{ if eq (.Scratch.Get "showCommentCount") true }}
+        <section class="comments-area">
+
+        {{ $.Scratch.Set "commentCount" 0 }}
+        {{ $.Scratch.Set "commentFolder" (string .File.BaseFileName) }}
+
+        {{ with .Params.commentFolder }}
+        {{ $.Scratch.Set "commentFolder" . }}
+        {{ end }}
+    
+        {{ $entryId := $.Scratch.Get "commentFolder" }}
+        {{ range $index, $comments := (index $.Site.Data.comments $entryId ) }}
+        {{ $.Scratch.Add "commentCount" 1 }}
+        {{ end }}       
+    
+        <a href="{{ .Permalink }}#comments">
+            {{ if eq ($.Scratch.Get "commentCount") 0 }}
+            <h3><i class="fas fa-comment-alt"></i> Nog geen reacties op “{{ .Title }}”</h3>
+            {{ else }}  
+            <h3><i class="fas fa-comment-alt"></i> {{$.Scratch.Get "commentCount" }} reacties op “{{ .Title }}”</h3>
+            {{ end }}
+        </a>
+
+        </section>        
+    {{ end }}  
+    <hr/>
 </article><!-- /.blog-post -->

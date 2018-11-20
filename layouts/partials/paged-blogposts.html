@@ -1,6 +1,9 @@
+
 {{ $paginator := .Paginate (where .Pages "Type" "post").ByDate.Reverse }}
 {{ range $paginator.Pages }}
+    {{ .Scratch.Set "showCommentCount" true }}
     {{- partial "post-body.html" . -}}
+    {{ .Scratch.Delete "showCommentCount" }}
 {{ end }}
 
 <nav class="blog-pagination">

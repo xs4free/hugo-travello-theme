@@ -1,6 +1,8 @@
 <section class="comments-area">
-  {{ $.Scratch.Add "commentCount" 0 }}
-  {{ $.Scratch.Add "commentFolder" (string .File.BaseFileName) }}
+  <a id="comments"></a>
+
+  {{ $.Scratch.Set "commentCount" 0 }}
+  {{ $.Scratch.Set "commentFolder" (string .File.BaseFileName) }}
 
   {{ with .Page.Params.commentFolder }}
     {{ $.Scratch.Set "commentFolder" . }}
@@ -12,9 +14,9 @@
   {{ end }}       
 
   {{ if eq ($.Scratch.Get "commentCount") 0 }}
-    <h3>Nog geen commentaar</h3>
+    <h3><i class="fas fa-comment-alt"></i> Nog geen reacties op “{{ .Title }}”</h3>
   {{ else }}  
-    <h3>{{$.Scratch.Get "commentCount" }} reacties op “{{ .Title }}”</h3>
+    <h3><i class="fas fa-comment-alt"></i> {{$.Scratch.Get "commentCount" }} reacties op “{{ .Title }}”</h3>
 
     <ol>
     {{ range $index, $comments := (index $.Site.Data.comments $entryId ) }}
