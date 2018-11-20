@@ -12,7 +12,6 @@ Special thanks to the following websites/blogposts:
 - [How to create a full-page hero image (HTML & CSS)][17] by Ethan
 
 #TODO
-- [ ] Add comment-count below blogs on list-page 
 - [ ] Add post new comment form
 - [ ] Enable reply to comment button besides comments
 - [ ] Add widget newest comments
@@ -61,6 +60,7 @@ Special thanks to the following websites/blogposts:
 - [x] ~~Fix comments when using Hugo Page Resource (no comments are visible)~~
 - [x] ~~Hide posts with 'draft: true'~~
 - [x] ~~Update [404.html page][10]~~
+- [x] ~~Add comment-count below blogs on list-page~~
 
 [1]: https://gohugo.io/content-management/related/
 [2]: https://github.com/puikinsh/activello
