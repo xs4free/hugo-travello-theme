@@ -3,7 +3,7 @@
     {{- partial "head.html" . -}}
     <body>
         <div class="container">
-            {{- partial "header.html" . -}}
+            {{- partialCached "header.html" . -}}
             <!-- {{- partial "header-categories.html" . -}} -->
             <!-- {{- partial "header-large-feature.html" . -}} -->
             <!-- {{- partial "header-features.html" . -}} -->
@@ -13,9 +13,9 @@
 
         {{- block "main" . }}{{- end }}
 
-        {{- partial "gallery/load-photoswipe.html" . -}}
+        {{- partialCached "gallery/load-photoswipe.html" . -}}
 
-        {{- partial "footer.html" . -}}
-        {{- partial "scripts.html" . -}}
+        {{- partialCached "footer.html" . -}}
+        {{- partialCached "scripts.html" . -}}
     </body>
 </html>
