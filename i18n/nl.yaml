@@ -1,15 +1,19 @@
 - id: give-reply
-  translation: "Geef een reactie"
+  translation: "Jouw reactie"
 - id: reply-body
+  translation: "Reactie"
+- id: your-body
   translation: "Jouw reactie."
 - id: use-markdown
   translation: "Je kunt <a href=\"https://nl.wikipedia.org/wiki/Markdown\">MarkDown</a> gebruiken om jouw reactie opmaak te geven."
 - id: reply-name
-  translation: "jouw naam"
+  translation: "Naam"
+- id: your-name
+  translation: "Jouw naam"
 - id: reply-email
-  translation: "jouw email-adres"
-- id: reply-website
-  translation: "jouw website"
+  translation: "Email"
+- id: your-email
+  translation: "Jouw email-adres"
 - id: submit
   translation: "Verstuur reactie"
 - id: akismet-notice

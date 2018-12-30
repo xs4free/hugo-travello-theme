@@ -4,7 +4,7 @@
   
   {{ $slug := replace .File.Dir "\\" "" }}
   
-  <form class="js-form form" method="post" action="{{ .Site.Params.staticman.api}}">
+  <form class="js-form form form-horizontal" method="post" action="{{ .Site.Params.staticman.api}}">
     <input type="hidden" name="options[slug]" value="{{ $slug }}">
     <input type="hidden" name="options[origin]" value="{{ .Permalink }}">
 
@@ -14,30 +14,27 @@
   
     <input type="hidden" name="fields[replyTo]" value="0">
 
-    <fieldset>
-      <div class="textfield">
-        <textarea name="fields[body]" type="text" placeholder="{{ i18n "reply-body" }}"></textarea>
-        <p class="markdown-notice">{{ i18n "use-markdown" | safeHTML }}</p>
+    <div class="form-group row">
+      <label for="fields[body]" class="col-sm-2 col-form-label">{{ i18n "reply-body" }}</label>
+      <div class="col-sm-10">
+        <textarea id="fields[body]" type="text" placeholder="{{ i18n "your-body" }}" class="form-control" aria-describedby="useMarkdown"></textarea>
+        <p id="useMarkdown" class="form-text text-muted markdown-notice">{{ i18n "use-markdown" | safeHTML }}</p>
       </div>
-    </fieldset>
-  
-    <fieldset>
-      <div class="textfield">
-        <input name="fields[name]" type="text" placeholder="{{ i18n "reply-name" }}"/>
+    </div>
+
+    <div class="form-group row">
+      <label for="fields[name]" class="col-sm-2 col-form-label">{{ i18n "reply-name" }}</label>
+      <div class="col-sm-10">
+        <input id="fields[name]" type="text" placeholder="{{ i18n "your-name" }}"/>
       </div>
-    </fieldset>
-  
-    <fieldset>
-      <div class="textfield">
-        <input name="fields[email]" type="email" placeholder="{{ i18n "reply-email" }}"/>
+    </div>
+    
+    <div class="form-group row">
+      <label for="fields[email]" class="col-sm-2 col-form-label">{{ i18n "reply-email" }}</label>
+      <div class="col-sm-10">
+        <input id="fields[email]" type="email" placeholder="{{ i18n "your-email" }}"/>
       </div>
-    </fieldset>
-  
-    <fieldset>
-      <div class="textfield">
-        <input name="fields[website]" type="text" placeholder="{{ i18n "reply-website" }}"/>
-      </div>
-    </fieldset>
+    </div>
   
     <!-- <fieldset>
       <div class="notify-me">
@@ -47,28 +44,22 @@
     </fieldset> -->
 
     {{ with .Site.Params.staticman.recaptcha.sitekey }}
-    <fieldset>
-      <div class="g-recaptcha" data-sitekey="{{ . }}">
-        <input type="hidden" name="options[reCaptcha][token]" id="recaptcha_token" value="" />
-      </div>
-    </fieldset>
-    {{ end }}  
-
-    <fieldset>
-      <button type="submit">
-          {{ i18n "submit" }} <i class="fa fa-circle-notch fa-spin hide"></i>
-      </button>
-    </fieldset>
-
-    <p class="submit-errors hide">
-      {{ i18n "submit-error" }}
-    </p>
-
-    {{ if .Site.Params.staticman.akismet }}
-    <p class="akismet_notice">
-      {{ i18n "akismet-notice" | safeHTML }}
-    </p>
+    <input type="hidden" name="options[reCaptcha][token]" id="recaptcha_token" value="" data-sitekey="{{ . }}" />
     {{ end }}
+
+    <div class="form-group row">
+      <div class="col-sm-12">
+        <button type="submit" class="btn btn-primary">
+          {{ i18n "submit" }} <i class="fa fa-circle-notch fa-spin hide"></i>
+        </button>
+        {{ if .Site.Params.staticman.akismet }}
+          <p id="askismet" class="form-text text-muted akismet_notice">{{ i18n "akismet-notice" | safeHTML }}</p>
+        {{ end }}
+        <p class="submit-errors hide">
+          {{ i18n "submit-error" }}
+        </p>
+      </div>
+    </div>
   </form>
 
   <div class="submit-succeeded hide">

@@ -53,7 +53,7 @@
     }
 
     grecaptcha.ready(function(){
-      var sitekey = $(".g-recaptcha").data("sitekey");
+      var sitekey = $("#recaptcha_token").data("sitekey");
 
       grecaptcha.execute(sitekey, {action: 'postcomment'}).then(function(token)
       {
