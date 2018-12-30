@@ -2,19 +2,28 @@
 {{ range $index, $comments := (index $.SiteDataComments_parent $.entryId_parent ) }}
   {{ if eq .replyTo $.parentId }}
     <li>
-      <div class="d-flex flex-row">
-        <div>
-            <img class="avatar" src="https://secure.gravatar.com/avatar/{{ .email }}?s=100&d=mm&r=g">
-        </div>
-        <div>
-          <div class="author">
-            {{ .name }} antwoordt op {{ $.parentName }}
-            <!-- <a id="{{ .id }}" href="#comment-form" onclick="changeValue('fields[replyTo]', '{{ .id }}')" aria-label="Antwoord op {{ .name }}">beantwoorden</a> -->
-          </div>
-          <small><time>{{ dateFormat "Monday 2 Jan 2006 om 15:04:05" .date }}</time></small>
-          <p>{{ .body | markdownify }}</p>
-        </div>
-      </div>
+      <article id="comment-{{ .id }}">
+          <div class="d-flex flex-row">
+              <div>
+                  <img class="avatar" src="https://secure.gravatar.com/avatar/{{ .email }}?s=100&d=mm&r=g">
+              </div>
+              <div>
+                <div class="author">
+                  {{ .name }} antwoordt op {{ $.parentName }}
+                  <a id="{{ .id }}" href="#comment-form" class="reply" aria-label="Reageren op {{ .name }}">
+                    <i class="fas fa-reply"></i> reageren
+                  </a>
+                </div>
+                <small>
+                  <a href="#comment-{{ .id }}" title="Link naar deze reactie">
+                    <time>{{ dateFormat "Monday 2 Jan 2006 om 15:04:05" .date }}</time>
+                    <!-- <time datetime="{{ .date }}">{{ dateFormat (default (i18n "shortdateFormat") .Site.Params.dateformat) .date}}</time> -->
+                  </a>
+                </small>
+                <p>{{ .body | markdownify }}</p>
+              </div>
+            </div>      
+      </article>
     </li>
   {{ end }}
 {{ end }}
