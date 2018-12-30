@@ -44,7 +44,7 @@
     }
 
     function showSucceededMessage(form) {
-      $(form).parent().find("submit-succeeded").removeClass("hide");
+      $(form).parent().find(".submit-succeeded").removeClass("hide");
       $(form).addClass("hide");
     }
 
