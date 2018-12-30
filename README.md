@@ -12,8 +12,6 @@ Special thanks to the following websites/blogposts:
 - [How to create a full-page hero image (HTML & CSS)][17] by Ethan
 
 #TODO
-- [ ] Add form-loading elements to post-comment
-- [ ] Improve layout post-comment below post and response (dialog) after submitted comment
 - [ ] Add widget newest comments
 - [ ] Replace [img-alt with figcaption-tag][9]
 - [ ] Add widget newest posts
@@ -64,6 +62,8 @@ Special thanks to the following websites/blogposts:
 - [x] ~~Add comment-count below blogs on list-page~~
 - [x] ~~Add post new comment form~~
 - [x] ~~Enable reply to comment button besides comments~~
+- [X] ~~Add form-loading elements to post-comment~~
+- [X] ~~Improve layout post-comment below post and response (dialog) after submitted comment~~
 
 [1]: https://gohugo.io/content-management/related/
 [2]: https://github.com/puikinsh/activello
