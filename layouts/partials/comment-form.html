@@ -10,7 +10,6 @@
 
     {{ if .Site.Params.staticman.recaptcha }}
     <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ .Site.Params.staticman.recaptcha.sitekey }}">
-    <!-- <input type="hidden" name="options[reCaptcha][secret]"  value="{{ .Site.Params.staticman.recaptcha.secret }}"> -->
     {{ end }}
   
     <input type="hidden" name="fields[replyTo]" value="0">
