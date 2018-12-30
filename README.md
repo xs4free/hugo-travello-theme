@@ -35,6 +35,7 @@ Special thanks to the following websites/blogposts:
 - [ ] Add Gulp + Webpack using [Victor Hugo][8] (alsof checkout deployment to Netlify)
 - [ ] Add minimal config.toml settings to readme
 - [ ] When multiple posts on the home-page contain a gallery, only shown images from one post in PhotoSwipe after clicking on a image
+- [ ] Add notify me support for comments
 - [ ] Implement [Facebook rectangular gallery style][16] image gallery
 - [ ] Add Disqus comments
 - [x] ~~Add post banner~~
