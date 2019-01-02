@@ -1,7 +1,7 @@
 // Static comments
 // from: https://github.com/eduardoboucas/popcorn/blob/gh-pages/js/main.js
 (function ($) {
-    $('.staticman-comments').find('a.reply').click(function(){
+    $('.comments-area').find('a.reply').click(function(){
       var commentId = this.id;
       $('[name="fields[replyTo]"]').val(commentId);
     });
