@@ -21,9 +21,11 @@
                   </a>
                 </small>
                 <p>{{ .body | markdownify }}</p>
+                <hr class="blog-seperator"/>
               </div>
             </div>      
       </article>
+      {{ partial "comment-replies" (dict "entryId_parent" $.entryId_parent "SiteDataComments_parent" $.SiteDataComments_parent "parentId" .id "parentName" .name "context" .) }}
     </li>
   {{ end }}
 {{ end }}
