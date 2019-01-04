@@ -12,7 +12,7 @@ Special thanks to the following websites/blogposts:
 - [How to create a full-page hero image (HTML & CSS)][17] by Ethan
 
 #TODO
-- [ ] Upgrade to Hugo 0.53 extended
+- [ ] Upgrade to Hugo 0.53 extended (change powershell scripts to generate and run hugo)
 - [ ] Remove Hugo warning: Page's .Next is deprecated and will be removed in a future release. Use .PrevPage (yes, not .NextPage).
 - [ ] Remove Hugo warning: Page's .Prev is deprecated and will be removed in a future release. Use .NextPage (yes, not .PrevPage)
 - [ ] Add widget newest comments
