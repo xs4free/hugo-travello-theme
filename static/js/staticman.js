@@ -34,11 +34,13 @@
     });
   
     function disableForm(form) {
+      $(':input[type="submit"]').attr("disabled", "disabled");
       $(form).find("fieldset").attr("disabled", "disabled");
       $(form).find("i").removeClass("hide");
     }
 
     function enableForm(form) {
+      $(':input[type="submit"]').removeAttr("disabled");
       $(form).find("fieldset").removeAttr("disabled");
       $(form).find("i").addClass("hide");
     }
