@@ -18,10 +18,10 @@
 
             <div class="blog-post-navigation">
                 <div class="float-left">
-                    {{ if .Next }} <a href="{{.Next.Permalink}}"><i class="fa fa-chevron-left"></i> {{.Next.Title | upper}}</a> {{ end }} 
+                    {{ if .PrevPage }} <a href="{{.PrevPage.Permalink}}"><i class="fa fa-chevron-left"></i> {{.PrevPage.Title | upper}}</a> {{ end }}
                 </div>
                 <div class="float-right">
-                    {{ if .Prev }} <a href="{{.Prev.Permalink}}">{{.Prev.Title | upper}} <i class="fa fa-chevron-right"></i></a> {{ end }}    
+                    {{ if .NextPage }} <a href="{{.NextPage.Permalink}}">{{.NextPage.Title | upper}} <i class="fa fa-chevron-right"></i></a> {{ end }}
                 </div>
             </div>    
         </div><!-- /.blog-main -->

@@ -13,8 +13,6 @@ Special thanks to the following websites/blogposts:
 
 #TODO
 - [ ] Upgrade to Hugo 0.53 extended (change powershell scripts to generate and run hugo)
-- [ ] Remove Hugo warning: Page's .Next is deprecated and will be removed in a future release. Use .PrevPage (yes, not .NextPage).
-- [ ] Remove Hugo warning: Page's .Prev is deprecated and will be removed in a future release. Use .NextPage (yes, not .PrevPage)
 - [ ] Add widget newest comments
 - [ ] Replace [img-alt with figcaption-tag][9]
 - [ ] Add widget newest posts
@@ -68,6 +66,8 @@ Special thanks to the following websites/blogposts:
 - [X] ~~Add form-loading elements to post-comment~~
 - [X] ~~Improve layout post-comment below post and response (dialog) after submitted comment~~
 - [X] ~~Fix that replies on replies on comments are actually rendered~~
+- [x] ~~Remove Hugo warning: Page's .Next is deprecated and will be removed in a future release. Use .PrevPage (yes, not .NextPage).~~
+- [x] ~~Remove Hugo warning: Page's .Prev is deprecated and will be removed in a future release. Use .NextPage (yes, not .PrevPage)~~
 
 [1]: https://gohugo.io/content-management/related/
 [2]: https://github.com/puikinsh/activello
