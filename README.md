@@ -13,6 +13,7 @@ Special thanks to the following websites/blogposts:
 
 #TODO
 - [ ] Upgrade to Hugo 0.53 extended (change powershell scripts to generate and run hugo)
+- [ ] Apply [How to load web fonts to avoid performance issues and speed up page loading](https://medium.freecodecamp.org/web-fonts-in-2018-f191a48367e8)
 - [ ] Add widget newest comments
 - [ ] Replace [img-alt with figcaption-tag][9]
 - [ ] Add widget newest posts
@@ -35,6 +36,7 @@ Special thanks to the following websites/blogposts:
 - [ ] Add minimal config.toml settings to readme
 - [ ] When multiple posts on the home-page contain a gallery, only shown images from one post in PhotoSwipe after clicking on a image
 - [ ] Add notify me support for comments
+- [ ] Fix post-comment to static-comments-to-git when javascript is disabled (form-submit button redirects page to Azure Functions). This works in StaticMan.
 - [ ] Implement [Facebook rectangular gallery style][16] image gallery
 - [ ] Add Disqus comments
 - [x] ~~Add post banner~~
