@@ -13,6 +13,8 @@ Special thanks to the following websites/blogposts:
 
 #TODO
 - [ ] Upgrade to Hugo 0.53 extended (change powershell scripts to generate and run hugo)
+- [ ] Add Hugo [Twitter Cards](https://gohugo.io/templates/internal/#twitter-cards) support
+- [ ] Add Hugo [Facebook OpenGraph tags](https://gohugo.io/templates/internal/#open-graph)
 - [ ] Apply [How to load web fonts to avoid performance issues and speed up page loading](https://medium.freecodecamp.org/web-fonts-in-2018-f191a48367e8)
 - [ ] Add widget newest comments
 - [ ] Replace [img-alt with figcaption-tag][9]
@@ -30,7 +32,6 @@ Special thanks to the following websites/blogposts:
 - [ ] Add cookie consent
 - [ ] Add scroll-to-top button on bottom-right of every page
 - [ ] Add [roles][6] to html-elements
-- [ ] Add Facebook OpenGraph tags to head
 - [ ] Remove https://www.google.com/recaptcha/api.js from List.html scriptblock (only needed for single.html) 
 - [ ] Add Gulp + Webpack using [Victor Hugo][8] (alsof checkout deployment to Netlify)
 - [ ] Add minimal config.toml settings to readme
