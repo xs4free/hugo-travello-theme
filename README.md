@@ -13,8 +13,6 @@ Special thanks to the following websites/blogposts:
 
 #TODO
 - [ ] Upgrade to Hugo 0.53 extended (change powershell scripts to generate and run hugo)
-- [ ] Add Hugo [Twitter Cards](https://gohugo.io/templates/internal/#twitter-cards) support
-- [ ] Add Hugo [Facebook OpenGraph tags](https://gohugo.io/templates/internal/#open-graph)
 - [ ] Apply [How to load web fonts to avoid performance issues and speed up page loading](https://medium.freecodecamp.org/web-fonts-in-2018-f191a48367e8)
 - [ ] Add widget newest comments
 - [ ] Replace [img-alt with figcaption-tag][9]
@@ -71,6 +69,8 @@ Special thanks to the following websites/blogposts:
 - [X] ~~Fix that replies on replies on comments are actually rendered~~
 - [x] ~~Remove Hugo warning: Page's .Next is deprecated and will be removed in a future release. Use .PrevPage (yes, not .NextPage).~~
 - [x] ~~Remove Hugo warning: Page's .Prev is deprecated and will be removed in a future release. Use .NextPage (yes, not .PrevPage)~~
+- [x] ~~Add Hugo [Twitter Cards](https://gohugo.io/templates/internal/#twitter-cards) support~~
+- [x] ~~Add Hugo [Facebook OpenGraph tags](https://gohugo.io/templates/internal/#open-graph)~~
 
 [1]: https://gohugo.io/content-management/related/
 [2]: https://github.com/puikinsh/activello
