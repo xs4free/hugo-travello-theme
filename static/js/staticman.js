@@ -56,11 +56,13 @@
 
     grecaptcha.ready(function(){
       var sitekey = $("#recaptcha_token").data("sitekey");
-
-      grecaptcha.execute(sitekey, {action: 'postcomment'}).then(function(token)
-      {
-        recaptcha_token.value = token;
-        $(':input[type="submit"]').css('visibility', 'visible');
-      });
+      
+      if (sitekey) {
+        grecaptcha.execute(sitekey, {action: 'postcomment'}).then(function(token)
+        {
+          recaptcha_token.value = token;
+          $(':input[type="submit"]').css('visibility', 'visible');
+        });
+      }
     });
   })(jQuery);
