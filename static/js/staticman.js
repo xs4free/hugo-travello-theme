@@ -60,7 +60,7 @@
       if (sitekey) {
         grecaptcha.execute(sitekey, {action: 'postcomment'}).then(function(token)
         {
-          recaptcha_token.value = token;
+          $('#recaptcha_token').val(token);
           $(':input[type="submit"]').removeClass("hide");
         });
       }
