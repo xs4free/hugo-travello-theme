@@ -6,7 +6,7 @@
       $('[name="fields[replyTo]"]').val(commentId);
     });
 
-    $(':input[type="submit"]').css('visibility', 'hidden');
+    $(':input[type="submit"]').addClass("hide");
 
     $('.js-form').submit(function (event) {
       event.preventDefault();
@@ -61,7 +61,7 @@
         grecaptcha.execute(sitekey, {action: 'postcomment'}).then(function(token)
         {
           recaptcha_token.value = token;
-          $(':input[type="submit"]').css('visibility', 'visible');
+          $(':input[type="submit"]').removeClass("hide");
         });
       }
     });
