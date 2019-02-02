@@ -12,6 +12,7 @@ Special thanks to the following websites/blogposts:
 - [How to create a full-page hero image (HTML & CSS)][17] by Ethan
 
 #TODO
+- [ ] Fix social media metadata when no Page Resource are present (see TODO in partial head.html)
 - [ ] Apply [How to load web fonts to avoid performance issues and speed up page loading](https://medium.freecodecamp.org/web-fonts-in-2018-f191a48367e8)
 - [ ] Add widget newest comments
 - [ ] Replace [img-alt with figcaption-tag][9]

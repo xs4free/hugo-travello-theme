@@ -37,7 +37,7 @@
                 {{ end -}}
             {{ end -}}
         {{ end }}
-    {{ else }}
+    {{ else }} <!-- TODO: introduce variable for else, so that when no Params.banner are found the else is used -->
         {{ template "_internal/twitter_cards.html" . }}
     {{ end }}
 
@@ -97,7 +97,7 @@
             {{ end -}}
 
         {{ end }}
-    {{ else }}
+    {{ else }}  <!-- TODO: introduce variable for else, so that when no Params.banner are found the else is used -->
         {{ template "_internal/opengraph.html" . }}
     {{ end }}
     
